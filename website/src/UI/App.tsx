@@ -1,6 +1,6 @@
 import "./App.css";
 import { lazy } from "react";
-
+const ComingSoon = lazy(() => import('../UI/ComingSoon/ComingSoon'))
 const Youtube = lazy(() => import('../APIs/Youtube/Youtube'));
 const Items = lazy(() => import('../APIs/BandCamp/Items'));
 const Spotify = lazy(() => import('../APIs/Spotify/Spotify'));
@@ -12,7 +12,8 @@ const Header = lazy(() => import('./Headers/Header'));
 function App() {
   return (
     <>
-      <main className="grid">
+      <ComingSoon/>
+      {/* <main className="grid">
         <Navbar />
         <Spotify />
         <Youtube />
@@ -22,7 +23,7 @@ function App() {
         <Seated />
         <br />
         <Footer />
-      </main>
+      </main> */}
     </>
   );
 }
