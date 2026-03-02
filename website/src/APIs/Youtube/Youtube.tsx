@@ -2,9 +2,9 @@ function Youtube() {
   return (
     <>
       <iframe
-        id="Watch"
-        width="90%"
+        width="100%"
         height="352"
+        style={{ border: 0}}
         src="https://www.youtube.com/embed/WF6q-tOTlv0?si=-Adr1dAgUCNf9k0q"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

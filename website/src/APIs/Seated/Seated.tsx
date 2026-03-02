@@ -4,7 +4,7 @@ function Seated() {
     <>
       <div
         id="seated-55fdf2c0"
-        data-artist-id="1e1a3710-8b94-43e3-acd1-bfb68bbad9ad"
+        data-artist-id="763cd0a3-e74c-40cc-94fa-2969a49a574d"
         data-css-version="3"
       ></div>
     </>

@@ -1,8 +1,11 @@
 .header-container {
     width: 100%;
+    margin: 0;
+    padding: 0;
     .header {
-        margin-left: 44px;
-        font-size: 18px;
-        text-align: left
+        font-size: 28px;
+        text-align: center;
+          font-variant: small-caps;
+
     }
 }

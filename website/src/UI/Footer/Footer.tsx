@@ -1,45 +1,19 @@
+import { IconBar } from "../IconBar/IconBar";
 import "./Footer.scss";
-import BandcampIcon from "../../Assets/Icons/BandcampIcon.svg";
-import FaceBookIcon from "../../Assets/Icons/FaceBookIcon.svg";
-import InstagramIcon from "../../Assets/Icons/InstagramIcon.svg";
-import SpotifyIcon from "../../Assets/Icons/SpotifyIcon.svg";
-import YoutubeIcon from "../../Assets/Icons/YoutubeIcon.svg";
 
 function Footer() {
   return (
-    <nav className="footer">
-      <ul>
-        <li>
-          <a className="footer-link email">SOCIALVOIDBAND@GMAIL.COM</a>
-        </li>
-        <br/>
-        <hr/>
-        <li>
-          <a className="footer-link" aria-label="Spotify icon link">
-            <img src={SpotifyIcon} />
-          </a>
-        </li>
-        <li>
-          <a className="footer-link" aria-label="Instagram icon link">
-            <img src={InstagramIcon} />
-          </a>
-        </li>
-        <li>
-          <a className="footer-link" aria-label="Facebook icon link">
-            <img src={FaceBookIcon} />
-          </a>
-        </li>
-        <li>
-          <a className="footer-link" aria-label="Bandcamp icon link">
-            <img src={BandcampIcon} />
-          </a>
-        </li>
-        <li>
-          <a className="footer-link" aria-label="Youtube icon link">
-            <img src={YoutubeIcon} />
-          </a>
-        </li>
-      </ul>
+    <nav className="footer-grid">
+      <div className="col">       
+        <IconBar width={30} height={30} className={""} />
+        All Contents © Social Void
+      </div>
+      <div className="col">
+        <p className="band-name">Social Void</p>
+      </div>
+      <div className="col">
+          <a className="email" href="mailto:socialvoidband@gmail.com">Send Us An Email</a>
+      </div>
     </nav>
   );
 }

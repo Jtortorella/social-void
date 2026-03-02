@@ -1,28 +1,31 @@
-.footer {
+.footer-grid {
+    height: 160px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #242424;
-    ul {
-        list-style-type: none;
-            margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: #262628;
+    place-items: center;
+
+    .col {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .icon-grid {
             padding: 0;
 
-        li {
-            display: inline;
-            .email:hover {
-                cursor: pointer;
-            }
-            .footer-link {
-                margin-left: 8px;
-                img {
-                    height: 40px;
-                    width: 40px;
-                }
-                img:hover {
-                    cursor: pointer;
-                }
-            }
         }
+        .band-name {
+            font-size: 28px;
+        }
+        .email {
+            text-decoration: none;
+            color: white;
+            border: 2px solid black;
+            background-color: #880808;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
     }
 }

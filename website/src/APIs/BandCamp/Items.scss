@@ -1,0 +1,10 @@
+.item-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.item {
+    border: 0px;
+    height: 300px;
+    width: 300px;
+}

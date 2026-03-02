@@ -1,6 +1,7 @@
 import { useState } from "react";
 import HamburgerMenuIcon from "../../Assets/Icons/HamburgerMenuIcon.svg";
 import "./Navbar.scss";
+import { IconBar } from "../IconBar/IconBar";
 function Navbar() {
   const [hideLinks, setHideLinks] = useState(true);
   const classString = "nav-link";
@@ -8,58 +9,51 @@ function Navbar() {
     <nav className="top-nav">
       <ul>
         <li className="hamburger-menu-container">
-          <a className="hamburger-menu-title hamburger-menu-item">
-            Social Void
+          <a className="hamburger-menu-title">
+            <p className="band-name">Social Void</p>
           </a>
           <a>
             <img
-              className="hamburger-menu-icon hamburger-menu-item"
+              className="hamburger-menu-icon"
               src={HamburgerMenuIcon}
               onClick={() => setHideLinks(!hideLinks)}
             ></img>
           </a>
         </li>
-        <li>
+        <li className={`${classString} ${hideLinks ? "hide-link" : ""}`}>
           <a
-            className={`${classString} ${hideLinks ? "hide-link" : ""}`}
+            className="nav-link-anchor"
             href="#Listen"
           >
             LISTEN
           </a>
         </li>
-        <li>
+        <li className={`${classString} ${hideLinks ? "hide-link" : ""}`}>
           <a
-            className={`${classString} ${hideLinks ? "hide-link" : ""}`}
+            className="nav-link-anchor"
             href="#Watch"
           >
             WATCH
           </a>
         </li>
-        <li>
+        <li className={`${classString} ${hideLinks ? "hide-link" : ""}`}>
           <a
-            className={`${classString + " title "} ${
-              hideLinks ? "hide-link" : ""
-            }`}
-            href="#Home"
-          >
-            SOCIAL VOID
-          </a>
-        </li>
-        <li>
-          <a
-            className={`${classString} ${hideLinks ? "hide-link" : ""}`}
+            className="nav-link-anchor"
             href="#Merch"
           >
             MERCH
           </a>
         </li>
-        <li>
+        <li className={`${classString} ${hideLinks ? "hide-link" : ""}`}>
           <a
-            className={`${classString} ${hideLinks ? "hide-link" : ""}`}
+            className="nav-link-anchor"
             href="#Tour"
           >
             TOUR
           </a>
+        </li>
+        <li className={`${classString} ${hideLinks ? "hide-link" : ""}`}>
+          <IconBar className={"small-icon-bar"} width={25} height={25} />
         </li>
       </ul>
     </nav>

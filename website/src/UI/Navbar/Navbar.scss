@@ -1,70 +1,53 @@
 .top-nav {
+    background-color: black;
+    padding: 0;
+    margin: 0;
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: #242424;
-
     ul {
-        list-style-type: none;
         padding: 0;
+        margin: 0;
 
-        li .nav-link {
-            text-decoration: none;
-            color: aliceblue;
-            padding: 10px;
-        }
+        .hamburger-menu-container {
+            padding: 0 10px 0 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
 
-        li .title {
-            font-weight: bold;
-        }
-
-        @media screen and (min-width: 563px) {
-            li {
-                display: inline;
-
-                .nav-link {
-                    display: inline;
-                    font-variant: small-caps;
-                    text-decoration: none;
-                    font-size: xx-large;
-                }
+            .hamburger-menu-icon {
+                height: 40px;
+                width: 40px;
             }
 
-            .hamburger-menu-container {
-                display: none;
+            .hamburger-menu-title {
+                font-size: larger;
             }
         }
+        .nav-link:not(:has(.icon-grid)) {
+                        cursor: pointer;
 
-        @media screen and (max-width: 563px) {
-            li .title {
-                display: none;
+        }
+        .nav-link {
+            border: .2px solid black;
+            padding: 5px 0 5px 0;
+            background-color: #880808;
+
+            .nav-link-anchor {
+                text-decoration: none;
+                color: white;
+                padding: 10px;
             }
 
+            .title {
+                font-weight: bold;
+            }
         }
 
     }
-}
-
-img {
-    height: 30px;
-    width: 30px;
-}
-
-img:hover {
-    cursor: pointer;
 }
 
 .hide-link {
     display: none;
-}
-
-.hamburger-menu-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    .hamburger-menu-item {
-        margin: 20px;
-    }
 }

@@ -1,0 +1,25 @@
+.icon-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .icon-link {
+        cursor: pointer;
+        .icon-link-img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.large-icon-bar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li {
+        .icon-link {
+            .icon-link-img {
+                margin-right: 30px;
+            }
+        }
+    }
+}
