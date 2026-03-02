@@ -16,7 +16,7 @@ function App() {
       <main className="grid">
         <Navbar />
         <Hero />
-        <IconBar width={46} height={42} className={"large-icon-bar"} />
+        <IconBar width={35} height={35} className={"large-icon-bar"} />
         <Header HeaderName={"Listen"} />
         <Spotify />
         <Header HeaderName={"Watch"} />
