@@ -30,7 +30,8 @@
 
         }
         .nav-link {
-            border: .2px solid black;
+            font-size: 22px;
+            border: .1px solid black;
             padding: 5px 0 5px 0;
             background-color: #880808;
 
@@ -44,7 +45,11 @@
                 font-weight: bold;
             }
         }
-
+        .nav-link:hover {
+            .nav-link-anchor {
+                color: black;
+            }
+        }
     }
 }
 

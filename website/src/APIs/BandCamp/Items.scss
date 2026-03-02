@@ -1,10 +1,17 @@
-.item-grid {
+    .item-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     gap: 10px;
+    }
+
+@media (min-width: 925px) {
+    .item-grid {
+    grid-template-columns: auto auto auto;
+    }
 }
+
 .item {
     border: 0px;
-    height: 300px;
     width: 300px;
+    height: 300px;
 }

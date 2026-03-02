@@ -1,6 +1,6 @@
 #root {
-  width: 100vw; 
-  padding: 1px; 
+  width: 100vw;
+  padding: 1px;
   margin: 0 auto;
   text-align: center;
 }
@@ -12,9 +12,11 @@
   place-items: center;
   margin: 0;
   padding: 0;
+
   ul {
     list-style: none;
   }
+
   .large-icon-bar {
     background-color: #262628;
     padding-top: 40px;
@@ -39,12 +41,15 @@
   letter-spacing: .3rem;
   font-variant: small-caps;
 }
-  #Listen,
-  #Watch,
-  #Home,
-  #Merch,
-  #Tour {
-    scroll-margin-top:240px;
-  }
 
+#Listen,
+#Watch,
+#Home,
+#Merch,
+#Tour {
+  scroll-margin-top: 240px;
+}
 
+.icon-link-img:hover {
+filter: invert(53%) sepia(9%) saturate(1476%) hue-rotate(138deg) brightness(91%) contrast(85%);
+}
