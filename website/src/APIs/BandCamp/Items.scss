@@ -1,12 +1,13 @@
     .item-grid {
     display: grid;
     grid-template-columns: auto;
-    gap: 10px;
+    gap: 30px;
     }
 
 @media (min-width: 925px) {
     .item-grid {
     grid-template-columns: auto auto auto;
+    gap: 10px;
     }
 }
 

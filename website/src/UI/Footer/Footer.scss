@@ -1,3 +1,4 @@
+
 .footer-grid {
     height: 160px;
     width: 100%;
@@ -15,9 +16,7 @@
             padding: 0;
 
         }
-        .band-name {
-            font-size: 28px;
-        }
+
         .email {
             text-decoration: none;
             color: white;
@@ -26,6 +25,19 @@
             padding: 8px;
             border-radius: 5px;
         }
+        .email:hover {
+            background-color: white;
+            color: #55868C;
 
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-grid {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
     }
 }
