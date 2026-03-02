@@ -53,7 +53,7 @@ function Navbar() {
           </a>
         </li>
         <li className={`${classString} ${hideLinks ? "hide-link" : ""}`}>
-          <IconBar className={"small-icon-bar"} width={25} height={25} />
+          <IconBar className={"small-icon-bar"} width={30} height={30} />
         </li>
       </ul>
     </nav>
