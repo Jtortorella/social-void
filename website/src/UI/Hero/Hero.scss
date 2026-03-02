@@ -13,3 +13,19 @@
         }
     }
 }
+@media (min-width: 925px) {
+    .horizontal {
+        display: block;
+    }
+    .vertical {
+        display: none
+    }
+}
+@media (max-width: 924px) {
+    .horizontal {
+        display: none;
+    }
+    .vertical {
+        display: block;
+    }
+}
