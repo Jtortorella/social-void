@@ -8,6 +8,7 @@ interface Item {
 export function Item(props: Item) {
   return (
     <iframe
+      title={props.title + ', an Album by Social Void'}
       className={props.class}
       src={props.src}
       seamless>

@@ -17,19 +17,20 @@
 
         }
 
-        .email {
+        .button {
+            cursor: pointer;
+            border: 0;
             text-decoration: none;
             color: white;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            background-color: #55868C;
+            background-color: #26535A;
             padding: 8px;
             border-radius: 5px;
         }
 
-        .email:hover {
+        .button:hover {
             background-color: white;
-            color: #55868C;
-
+            color: #26535A;
         }
 
     }
@@ -45,4 +46,24 @@
             margin-bottom: 16px;
         }
     }
+}
+
+#privacy-policy {
+background-color: #262628;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: min-content;
+  width: 80vw;
+  z-index: 9999;
+
+  #close-button {
+    background-color: transparent;
+    position: relative;
+    top: -17px;
+    left: 50%;
+    border: none;
+    text-align: right;
+  }
 }

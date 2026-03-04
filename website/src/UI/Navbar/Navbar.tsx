@@ -10,7 +10,7 @@ function Navbar() {
       <ul>
         <li className="hamburger-menu-container">
           <a className="hamburger-menu-title">
-            <p className="band-name">Social Void</p>
+            <h1 className="band-name">Social Void</h1>
           </a>
           <a>
             <img

@@ -1,6 +1,7 @@
 function Spotify() {
   return (
       <iframe
+        title="Lost Media, an album by Social Void"
         data-testid="embed-iframe"
         style={{borderRadius:12, border: 0}}
         src="https://open.spotify.com/embed/album/5eahtQWqkF3Uypcdror7lj?utm_source=generator&theme=0" 

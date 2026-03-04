@@ -9,7 +9,6 @@ const Seated = lazy(() => import('../APIs/Seated/Seated'));
 const Navbar = lazy(() => import('./Navbar/Navbar'));
 const Footer = lazy(() => import('./Footer/Footer'));
 const Header = lazy(() => import('./Headers/Header'));
-
 function App() {
   return (
     <>
