@@ -14,36 +14,45 @@ export const IconBar = (props: IconSize) => {
     return (
         <ul className={`icon-grid ${props.className}`}>
             <li>
-                <a className="icon-link" href="https://open.spotify.com/artist/1ZxPQKtHcZ3Jc8pWhZkdTc" aria-label="Spotify icon link" target="_blank">
+                <a className="icon-link" href="https://open.spotify.com/artist/1ZxPQKtHcZ3Jc8pWhZkdTc" aria-label="Spotify icon link." target="_blank">
                     <img className="icon-link-img"
+                    alt="Spotify icon link."
                         style={{width: props.width, height: props.height}}
                     src={SpotifyIcon} />
                 </a>
             </li>
             <li>
-                <a className="icon-link" href="https://www.instagram.com/socialvoid/" aria-label="Instagram icon link" target="_blank">
+                <a className="icon-link" href="https://www.instagram.com/socialvoid/" aria-label="Instagram icon link." target="_blank">
                     <img className="icon-link-img"
+                                        alt="Instagram icon link."
+
                                             style={{width: props.width, height: props.height}}
  src={InstagramIcon} />
                 </a>
             </li>
             <li>
-                <a className="icon-link" href="https://www.facebook.com/socialvoidband/" aria-label="Facebook icon link" target="_blank">
+                <a className="icon-link" href="https://www.facebook.com/socialvoidband/" aria-label="Facebook icon link." target="_blank">
                     <img className="icon-link-img"
+                                                            alt="Facebook icon link."
+
                                             style={{width: props.width, height: props.height}}
 src={FaceBookIcon} />
                 </a>
             </li>
             <li>
-                <a className="icon-link" href="https://socialvoid.bandcamp.com/" aria-label="Bandcamp icon link" target="_blank">
+                <a className="icon-link" href="https://socialvoid.bandcamp.com/" aria-label="Bandcamp icon link." target="_blank">
                     <img className="icon-link-img" 
+                                                                                alt="BandCamp icon link."
+
                                             style={{width: props.width, height: props.height}}
  src={BandcampIcon} />
                 </a>
             </li>
             <li>
-                <a className="icon-link" href="https://www.youtube.com/@socialvoid" aria-label="Youtube icon link" target="_blank">
-                    <img className="icon-link-img"                         style={{width: props.width, height: props.height}}
+                <a className="icon-link" href="https://www.youtube.com/@socialvoid" aria-label="Youtube icon link." target="_blank">
+                    <img className="icon-link-img"                
+                                                                                alt="Youtube icon link."
+         style={{width: props.width, height: props.height}}
  src={YoutubeIcon} />
                 </a>
             </li>

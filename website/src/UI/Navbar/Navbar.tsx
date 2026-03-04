@@ -15,6 +15,7 @@ function Navbar() {
           <a>
             <img
             className={`hamburger-menu-icon ${hideLinks ? "" : "active"}`}
+            alt="Hamburger menu icon."
               src={HamburgerMenuIcon}
               onClick={() => setHideLinks(!hideLinks)}
             ></img>
